@@ -3,14 +3,14 @@
  * Template Name: 注册模板
  */
 get_header('login');
-global $current_user,$options; 
+global $current_user; 
 get_currentuserinfo();
 $uid = $current_user->ID;
 ?>
 <?php if(is_user_logged_in()){ ?>
 <script>alert("当前账号已登录，即将跳转至用户中心");window.location.href="<?php echo get_author_posts_url( $uid );?>";</script>
 <?php }else{?>
-	<div class="page-header header-filter" filter-color="purple" style="background-image: url(<?php bloginfo('template_url');?>/public/img/bg7.jpg); background-size: cover; background-position: top center;">
+	<div class="page-header header-filter" style="background-image: url(<?php bloginfo('template_url');?>/public/img/bg7.jpg); background-size: cover; background-position: top center;">
     	<div class="container">
 			<div class="row">
     			<div class="col-md-10 col-md-offset-1">

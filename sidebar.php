@@ -1,18 +1,6 @@
                     <div class="col-md-3 hidden-xs">
 					    <div class="row">
 							<div class="col-md-12">
-							    <!--<div class="card card-pricing">
-	    							<div class="card-content content-info">
-	    								<div class="icon">
-	    									<i class="material-icons">beach_access</i>
-	    								</div>
-	    								<h3 class="card-title">￥259</h3>
-	    								<p class="card-description">
-	    									一款用心的主题
-	    								</p>
-	    								<a href="#pablo" class="btn btn-white btn-round">立即购买</a>
-	    							</div>
-	    						</div>-->
 								<?php $html = '<div class="blog-tags"><h5 class="products-title">Tags</h5> <hr>';
                                     foreach (get_tags( array('number' => 6, 'orderby' => 'count', 'order' => 'DESC', 'hide_empty' => false) ) as $tag){
 	                                $tag_link = get_tag_link($tag->term_id);
@@ -48,6 +36,18 @@
 									</div>
 									<?php endwhile;wp_reset_query();$posts = null;?>
 							    </div>
+								<div class="card card-pricing">
+	    							<div class="card-content content-info">
+	    								<div class="icon">
+	    									<i class="material-icons">important_devices</i>
+	    								</div>
+	    								<h3 class="card-title">￥319</h3>
+	    								<p class="card-description">
+	    									Barley主题
+	    								</p>
+	    								<a href="https://www.loobo.me/963.html" class="btn btn-white btn-round">立即购买</a>
+	    							</div>
+	    						</div>
 							</div>
 						</div>
 					</div>

@@ -29,7 +29,7 @@
 	    						</div>
 	    				    </div>
 						    <h1 class="post-title">
-						        <a href="<?php the_permalink() ?>" target="_blank"><?php the_title(); ?></a>
+						        <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 						    </h1>
 						    <p class="post-ep"><?php echo mb_strimwidth(strip_tags(apply_filters('the_content', $post->post_content)), 0, 140,"…"); ?></p>
 						    <hr>

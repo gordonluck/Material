@@ -57,10 +57,6 @@ function lb_scripts_styles() {
 	wp_enqueue_style( 'material-kit', $tpl . 'css/material.min.css', THEME_VER, true );
 }
 add_action( 'wp_enqueue_scripts', 'lb_scripts_styles' );
-
-
-
-
 /**
 功能说明: user url
 更新时间：2016-11-11
@@ -169,7 +165,7 @@ function bootstrap_pagination($pages = '', $range = 2)  {
     }  
     if(1 != $pages)  {  
         echo '<ul class="pagination pagination-info">';  
-        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo '<li><a href="'.get_pagenum_link(1).'"><i class="material-icons">keyboard_arrow_left</i>最新</a></li>';  
+        //if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo '<li><a href="'.get_pagenum_link(1).'"><i class="material-icons">keyboard_arrow_left</i>最新</a></li>';  
         if($paged > 1 && $showitems < $pages) echo '<li><a href="' .get_pagenum_link($paged - 1). '" rel="prev">上一页</a></li>';  
         for ($i=1; $i <= $pages; $i++)  {  
         if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))  {  
@@ -177,7 +173,7 @@ function bootstrap_pagination($pages = '', $range = 2)  {
         }  
     }  
     if ($paged < $pages && $showitems < $pages) echo '<li><a href="'.get_pagenum_link($paged + 1).'" rel="next">下一页</a></li>';  
-    if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo '<li><a href="'.get_pagenum_link($pages).'">最后<i class="material-icons">keyboard_arrow_right</i></a></li>';  
+    //if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo '<li><a href="'.get_pagenum_link($pages).'">最后<i class="material-icons">keyboard_arrow_right</i></a></li>';  
     echo '</ul>';  
     }  
 }  

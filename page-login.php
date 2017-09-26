@@ -20,13 +20,13 @@ $uid = $current_user->ID;
 								<h4 class="card-title">Log in</h4>
 								<div class="social-line">
 									<a href="#pablo" class="btn btn-just-icon btn-simple">
-										<i class="fa fa-facebook-square"></i>
+										<i class="fa fa-weibo"></i>
 									</a>
 									<a href="#pablo" class="btn btn-just-icon btn-simple">
-										<i class="fa fa-twitter"></i>
+										<i class="fa fa-qq"></i>
 									</a>
 									<a href="#pablo" class="btn btn-just-icon btn-simple">
-										<i class="fa fa-google-plus"></i>
+										<i class="fa fa-weixin"></i>
 									</a>
 								</div>
 							</div>

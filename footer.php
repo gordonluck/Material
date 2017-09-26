@@ -1,28 +1,26 @@
 <footer class="footer footer-black">
-	            		<div class="container">
-	            			<a class="footer-brand" href="#pablo"><?php echo get_logo_icon();?></a>
-
-                            <?php wp_nav_menu( array( 'theme_location' => 'footer-menu','menu_id'=>'main-menu','menu_class'=>'pull-center','container'=>'ul')); ?>
-	            			<ul class="social-buttons pull-right">
-	            				<li>
-	            					<a href="https://weibo.com/u/5080890941" target="_blank" class="btn btn-just-icon btn-simple">
-	            						<i class="fa fa-weibo"></i>
-	            					</a>
-	            				</li>
-	            				<li>
-	            					<a class="btn btn-just-icon btn-simple" data-toggle="modal" data-target="#smallAlertModal">
-	            						<i class="fa fa-weixin"></i>
-	            					</a>
-	            				</li>
-	            				<li>
-	            					<a href="100041385" target="_blank" class="btn btn-just-icon btn-simple">
-	            						<i class="fa fa-qq"></i>
-	            					</a>
-	            				</li>
-	            			</ul>
-
-	            		</div>
-	            	</footer>
+	<div class="container">
+	    <a class="footer-brand" href="https://loobo.me">Theme By 主题笔记 <div class="ripple-container"></div></a>
+        <?php wp_nav_menu( array( 'theme_location' => 'footer-menu','menu_id'=>'main-menu','menu_class'=>'pull-center','container'=>'ul')); ?>
+	    <ul class="social-buttons pull-right">
+	        <li>
+	            <a href="https://weibo.com/u/5080890941" target="_blank" class="btn btn-just-icon btn-simple">
+	            	<i class="fa fa-weibo"></i>
+	            </a>
+	        </li>
+	        <li>
+	            <a class="btn btn-just-icon btn-simple" data-toggle="modal" data-target="#smallAlertModal">
+	            	<i class="fa fa-weixin"></i>
+	            </a>
+	        </li>
+	        <li>
+	            <a href="100041385" target="_blank" class="btn btn-just-icon btn-simple">
+	            	<i class="fa fa-qq"></i>
+	            </a>
+	        </li>
+	    </ul>
+	</div>
+</footer>
 <div class="modal fade in" id="smallAlertModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-small ">
     <div class="modal-content">
